@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace BookStore.Models
 {
@@ -8,7 +9,11 @@ namespace BookStore.Models
         {
             this.Books = new List<Book>();
         }
+        [Key]
         public int Id { get; set; }
+
+        [Required(ErrorMessage = "*")]
+        [StringLength(30, MinimumLength = 3, ErrorMessage = "Invalid field")]
         public string Name { get; set; }
 
         public ICollection<Book> Books { get; set; }
