@@ -9,9 +9,9 @@ namespace BookStore.ViewModels
     public class VinculateAuthorBookViewModel
     {
         [Required(ErrorMessage = "*")]
-        public long AuthorId { get; set; }
+        public int AuthorId { get; set; }
 
         [Required(ErrorMessage = "*")]
-        public long BookId { get; set; }
+        public int BookId { get; set; }
     }
 }
