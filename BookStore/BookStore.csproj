@@ -124,6 +124,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Mapping\AuthorMap.cs" />
+    <Compile Include="Mapping\BookMap.cs" />
+    <Compile Include="Mapping\CategoryMap.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\VinculateAuthorBookViewModel.cs" />

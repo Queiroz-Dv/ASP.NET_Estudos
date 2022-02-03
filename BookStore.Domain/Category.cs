@@ -6,7 +6,6 @@ namespace BookStore.Domain
     {
         public Category()
         {
-            //Start the collection
             this.Books = new List<Book>();
         }
         public int Id { get; set; }
